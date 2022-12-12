@@ -8,8 +8,8 @@ namespace Case3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
-            int a =int.Parse (Console.ReadLine());
+            Console.WriteLine("введите число для поиска");
+            int a =int.Parse (Console.In.ReadLine());
             var dict = new Dictionary<int,string>();
             int m=0;
             int n=0;
@@ -33,7 +33,7 @@ namespace Case3
             string[] results = result.Split(' ');
             int result1 = int.Parse(results[0]);
             int result2 = int.Parse(results[1]);
-            Console.WriteLine($"{result1}  {result2}");
+            Console.Out.WriteLine($"минимальные числа - {result1}  {result2}");
         }
     }
 }
